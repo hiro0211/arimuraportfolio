@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Code2, Users, Rocket, Lightbulb, Target, Zap, Brain, Award } from 'lucide-react';
 

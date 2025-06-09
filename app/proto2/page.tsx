@@ -25,9 +25,6 @@ const GrowthStorySection: React.FC = () => {
     return (
         <section className="py-20 bg-white">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-left mb-12 text-gray-800 border-l-4 border-blue-500 pl-4">
-                    半年間の歩み
-                </h2>
                 <div className="max-w-7xl mx-auto">
                     {/* サブセクション③ 自己紹介 */}
                     <div id="self-introduction" className="mb-20 animate-on-scroll">
@@ -65,7 +62,7 @@ const GrowthStorySection: React.FC = () => {
                                     </div>
                                     <div className="space-y-3">
                                         <p className="text-gray-700 text-sm transition-colors hover:text-orange-700">
-                                            とにかく大食いです！食べることが大好きで、特にお寿司は何貫でも食べられます🍣
+                                            とにかく大食いです！食べることが大好きで、回転寿司行くと20皿くらい食べます🍣
                                         </p>
                                         <div className="bg-orange-50 p-3 rounded-lg border border-orange-200">
                                             <p className="text-orange-700 text-xs font-medium">
@@ -125,7 +122,7 @@ const GrowthStorySection: React.FC = () => {
                             <div className="bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-2xl border-l-4 border-indigo-500 mb-8">
                                 <h3 className="text-2xl font-bold mb-6 text-indigo-700 flex items-center">
                                     <FontAwesomeIcon icon={faBolt} className="mr-3" />
-                                    活かせそうな経験・スキル
+                                    活かせる経験・スキル
                                 </h3>
 
                                 <div className="grid grid-cols-1 gap-8 mb-8">
@@ -147,7 +144,7 @@ const GrowthStorySection: React.FC = () => {
                                                         </div>
                                                         <div>
                                                             <h4 className="text-2xl font-bold text-gray-800 transition-colors hover:text-blue-800 mb-2">目標達成支援アプリ</h4>
-                                                            <p className="text-blue-600 text-lg font-medium">AIタスク提案機能付き</p>
+                                                            <p className="text-blue-600 text-lg font-medium">AIタスク自動生成機能付き</p>
                                                         </div>
                                                     </div>
 
