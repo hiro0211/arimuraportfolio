@@ -14,7 +14,6 @@ import {
     faEye,
     faUtensils,
     faGamepad,
-    faCog,
     faChalkboardTeacher,
     faPenFancy,
     faBolt,
@@ -312,7 +311,7 @@ const GrowthStorySection: React.FC = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                     {/* ④OJTのモダナイズ化プロジェクト */}
                                     <div className="mb-8">
                                         <div className="w-full">
@@ -358,9 +357,9 @@ const GrowthStorySection: React.FC = () => {
                                                                     <li className="transition-all duration-200 hover:text-red-700 hover:font-medium hover:translate-x-2">• モバイル対応が不十分</li>
                                                                 </ul>
                                                                 <a href="https://hiro0211.github.io/Self-Introduction-webSite9-4/" target="_blank" rel="noopener noreferrer"
-                                                                    className="inline-flex items-center text-red-600 hover:text-red-800 font-medium text-sm transition-all duration-200 hover:translate-x-2">
-                                                                    <FontAwesomeIcon icon={faEye} className="mr-2 transition-transform hover:scale-125" />
-                                                                    旧サイトを見る
+                                                                    className="inline-flex items-center bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:from-red-600 hover:to-red-700 hover:translate-x-2 hover:shadow-lg group">
+                                                                    <FontAwesomeIcon icon={faEye} className="mr-3 transition-transform group-hover:scale-125 group-hover:translate-x-1" />
+                                                                    改善前サイト
                                                                 </a>
                                                             </div>
 
@@ -382,9 +381,9 @@ const GrowthStorySection: React.FC = () => {
                                                                     <li className="transition-all duration-200 hover:text-green-700 hover:font-medium hover:translate-x-2">• モダンなアニメーション</li>
                                                                 </ul>
                                                                 <a href="https://claude-ojt-plan5-15.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                                                    className="inline-flex items-center text-green-600 hover:text-green-800 font-medium text-sm transition-all duration-200 hover:translate-x-2">
-                                                                    <FontAwesomeIcon icon={faEye} className="mr-2 transition-transform hover:scale-125" />
-                                                                    新サイトを見る
+                                                                    className="inline-flex items-center bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:from-green-600 hover:to-green-700 hover:translate-x-2 hover:shadow-lg group">
+                                                                    <FontAwesomeIcon icon={faRocket} className="mr-3 transition-transform group-hover:scale-125 group-hover:translate-x-1" />
+                                                                    改善後サイト
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -516,19 +515,6 @@ const GrowthStorySection: React.FC = () => {
                                                                 <span className="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-green-200 hover:to-green-300 hover:scale-105">GitHub Copilot</span>
                                                             </div>
                                                         </div>
-                                                    </div>
-
-                                                    <div className="flex gap-4">
-                                                        <a href="https://hiro0211.github.io/Self-Introduction-webSite9-4/" target="_blank" rel="noopener noreferrer"
-                                                            className="inline-flex items-center bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:from-red-600 hover:to-red-700 hover:translate-x-2 hover:shadow-lg group">
-                                                            <FontAwesomeIcon icon={faEye} className="mr-3 transition-transform group-hover:scale-125 group-hover:translate-x-1" />
-                                                            改善前サイト
-                                                        </a>
-                                                        <a href="https://claude-ojt-plan5-15.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                                            className="inline-flex items-center bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:from-green-600 hover:to-green-700 hover:translate-x-2 hover:shadow-lg group">
-                                                            <FontAwesomeIcon icon={faRocket} className="mr-3 transition-transform group-hover:scale-125 group-hover:translate-x-1" />
-                                                            改善後サイト
-                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
