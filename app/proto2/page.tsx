@@ -24,11 +24,20 @@ import {
   faVolumeUp,
   faVolumeMute,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const GrowthStorySection: React.FC = () => {
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        // Autoplay was prevented.
+        console.error("Video autoplay was prevented:", error);
+      });
+    }
+  }, []);
 
   const toggleMute = () => {
     if (videoRef.current) {
@@ -53,7 +62,7 @@ const GrowthStorySection: React.FC = () => {
                 ref={videoRef}
                 autoPlay
                 loop
-                muted={isMuted}
+                muted
                 playsInline
                 className="w-full h-full object-cover"
               >
