@@ -93,8 +93,8 @@ const GrowthStorySection: React.FC = () => {
             <div className="relative z-10 transition-all duration-1000 opacity-100 translate-y-0 py-20 h-full flex items-end pb-20">
               {/* メインメッセージ - 下部左寄せレイアウト（動画のメッセージと重ならない配置） */}
               <div className="text-left max-w-xl ml-8 md:ml-16 lg:ml-20">
-                <div className="inline-block bg-white/95 backdrop-blur-sm px-4 sm:px-6 py-3 rounded-full mb-6 shadow-lg border border-gray-200">
-                  <span className="text-gray-700 font-semibold text-xs sm:text-sm whitespace-nowrap">
+                <div className="inline-block bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full mb-6 shadow-lg border border-gray-200">
+                  <span className="text-gray-700 font-semibold text-sm">
                     AI共通プラットフォーム構築への想い
                   </span>
                 </div>
