@@ -44,7 +44,8 @@ const GrowthStorySection: React.FC = () => {
           {/* 新しいメッセージセクション */}
           <div
             id="mission-message"
-            className="mb-32 animate-on-scroll relative overflow-hidden"
+            className="mb-32 animate-on-scroll relative overflow-hidden rounded-2xl"
+            style={{ height: "70vh", minHeight: "600px", maxHeight: "800px" }}
           >
             {/* 背景動画 */}
             <div className="absolute inset-0 w-full h-full">
@@ -80,7 +81,7 @@ const GrowthStorySection: React.FC = () => {
               </div>
             </div>
 
-            <div className="relative z-10 transition-all duration-1000 opacity-100 translate-y-0 py-20 min-h-screen flex items-end pb-20">
+            <div className="relative z-10 transition-all duration-1000 opacity-100 translate-y-0 py-20 h-full flex items-end pb-20">
               {/* メインメッセージ - 下部左寄せレイアウト（動画のメッセージと重ならない配置） */}
               <div className="text-left max-w-xl ml-8 md:ml-16 lg:ml-20">
                 <div className="inline-block bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full mb-6 shadow-lg border border-gray-200">
