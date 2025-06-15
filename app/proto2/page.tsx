@@ -21,9 +21,22 @@ import {
   faHandshake,
   faLightbulb,
   faSearch,
+  faVolumeUp,
+  faVolumeMute,
 } from "@fortawesome/free-solid-svg-icons";
+import { useState, useRef } from "react";
 
 const GrowthStorySection: React.FC = () => {
+  const [isMuted, setIsMuted] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -36,8 +49,10 @@ const GrowthStorySection: React.FC = () => {
             {/* 背景動画 */}
             <div className="absolute inset-0 w-full h-full">
               <video
+                ref={videoRef}
                 autoPlay
                 loop
+                muted={isMuted}
                 playsInline
                 className="w-full h-full object-cover"
               >
@@ -49,6 +64,20 @@ const GrowthStorySection: React.FC = () => {
               </video>
               {/* 動画の上にオーバーレイを追加してテキストを読みやすくする */}
               <div className="absolute inset-0 bg-black/20"></div>
+
+              {/* 音声オンオフボタン */}
+              <div className="absolute top-6 right-6 z-20">
+                <button
+                  onClick={toggleMute}
+                  className="bg-white/90 backdrop-blur-sm hover:bg-white/95 text-gray-700 hover:text-gray-900 p-3 rounded-full shadow-lg border border-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl group"
+                  aria-label={isMuted ? "音声をオンにする" : "音声をオフにする"}
+                >
+                  <FontAwesomeIcon
+                    icon={isMuted ? faVolumeMute : faVolumeUp}
+                    className="text-lg transition-transform group-hover:scale-110"
+                  />
+                </button>
+              </div>
             </div>
 
             <div className="relative z-10 transition-all duration-1000 opacity-100 translate-y-0 py-20 min-h-screen flex items-end pb-20">
