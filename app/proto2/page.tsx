@@ -66,10 +66,7 @@ const GrowthStorySection: React.FC = () => {
                 playsInline
                 className="w-full h-full object-cover"
               >
-                <source
-                  src="/Arimura_Hiroaki_自己紹介オープニング.mp4"
-                  type="video/mp4"
-                />
+                <source src="/ArimuraPortfolio.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               {/* 動画の上にオーバーレイを追加してテキストを読みやすくする */}
@@ -93,42 +90,24 @@ const GrowthStorySection: React.FC = () => {
             <div className="relative z-10 transition-all duration-1000 opacity-100 translate-y-0 py-20 h-full flex items-end pb-20">
               {/* メインメッセージ - 下部左寄せレイアウト（動画のメッセージと重ならない配置） */}
               <div className="text-left max-w-xl ml-8 md:ml-16 lg:ml-20">
-                <div className="inline-block bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full mb-6 shadow-lg border border-gray-200">
+                {/* <div className="inline-block bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full mb-6 shadow-lg border border-gray-200">
                   <span className="text-gray-700 font-semibold text-sm">
                     AI共通プラットフォーム構築への想い
                   </span>
-                </div>
+                </div> */}
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                   <span className="text-white drop-shadow-2xl">
-                    「心が壊れるまで
+                    AIは、人の心と時間を
                     <br />
-                    働く必要ない」
+                    を守るためにある。
                   </span>
                   <br />
-                  <span className="text-white/95 drop-shadow-2xl text-2xl md:text-3xl lg:text-4xl font-medium">
-                    この想いが、私の原動力です
-                  </span>
                 </h1>
                 <p className="text-lg md:text-xl text-white/95 leading-relaxed drop-shadow-lg mb-8 max-w-lg">
-                  過重労働で心身をすり減らした姉の姿を前に誓った言葉。
-                  <br />
-                  業務効率化で働きすぎを解消し、心の病がない社会を実現したい。
+                この想いを、AIとビジネスの力で社会の仕組みに変える。
                 </p>
 
                 {/* シンプルで信頼感のあるCTA */}
-                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-gray-200 max-w-lg">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">
-                    Fujitsu Kozuchiで実現したいこと
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4 text-base">
-                    研究所の先進技術を、現場の苦しみを解決する力へ。
-                    <br />
-                    AIが当たり前に人の心と時間のゆとりを守る社会を創造したい。
-                  </p>
-                  <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-5 py-2 rounded-lg inline-block shadow-md text-sm font-semibold">
-                    FY25売上10億円達成に向けた即戦力として貢献
-                  </div>
-                </div>
               </div>
             </div>
           </div>
