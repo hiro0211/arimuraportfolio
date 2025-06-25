@@ -1,20 +1,29 @@
-'use client';
-import React, { useState, useEffect } from 'react';
-import { Code, Zap, Users, Lightbulb, Rocket, ChevronDown, ExternalLink } from 'lucide-react';
+"use client";
+import React, { useState, useEffect } from "react";
+import {
+  Code,
+  Zap,
+  Users,
+  Lightbulb,
+  Rocket,
+  ChevronDown,
+  ExternalLink,
+} from "lucide-react";
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const totalScroll =
+        document.documentElement.scrollHeight - window.innerHeight;
       const currentScroll = window.scrollY;
       const progress = (currentScroll / totalScroll) * 100;
       setScrollProgress(progress);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -44,9 +53,15 @@ export default function Home() {
             エンジニア × スピード × 実行力
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <span className="px-4 py-2 bg-blue-600/20 border border-blue-500 rounded-full">Next.js</span>
-            <span className="px-4 py-2 bg-purple-600/20 border border-purple-500 rounded-full">TypeScript</span>
-            <span className="px-4 py-2 bg-green-600/20 border border-green-500 rounded-full">AI Integration</span>
+            <span className="px-4 py-2 bg-blue-600/20 border border-blue-500 rounded-full">
+              Next.js
+            </span>
+            <span className="px-4 py-2 bg-purple-600/20 border border-purple-500 rounded-full">
+              TypeScript
+            </span>
+            <span className="px-4 py-2 bg-green-600/20 border border-green-500 rounded-full">
+              AI Integration
+            </span>
           </div>
         </div>
         <ChevronDown className="absolute bottom-8 animate-bounce w-8 h-8" />
@@ -69,29 +84,167 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
               <h3 className="text-2xl font-bold mb-4">🍜 大食い系エンジニア</h3>
-              <p className="text-gray-300">スシロー20皿完食。二郎系からイタリアンまで</p>
+              <p className="text-gray-300">
+                スシロー20皿完食。二郎系からイタリアンまで
+              </p>
             </div>
             <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 transform hover:-translate-y-2">
               <h3 className="text-2xl font-bold mb-4">🤖 AI課金9,000円/月</h3>
-              <p className="text-gray-300">ChatGPT, Cursor, Claude。最新技術への投資は惜しまない</p>
+              <p className="text-gray-300">
+                ChatGPT, Cursor, Claude。最新技術への投資は惜しまない
+              </p>
             </div>
             <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300 transform hover:-translate-y-2">
               <h3 className="text-2xl font-bold mb-4">🚀 個人開発</h3>
-              <p className="text-gray-300">React Native × Unity。App Store5つ星レビューを夢見て</p>
+              <p className="text-gray-300">
+                React Native × Unity。App Store5つ星レビューを夢見て
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* My Strengths Section */}
+      <section className="min-h-screen flex items-center justify-center py-20 bg-gray-800/30">
+        <div className="max-w-6xl mx-auto px-8">
+          <h2 className="text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+            発揮できる私の強み
+          </h2>
+          <div className="space-y-8">
+            {/* Strength 1 */}
+            <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <h3 className="text-xl font-bold text-blue-400 mb-2">
+                    期待される役割
+                  </h3>
+                  <p className="text-gray-300">
+                    顧客価値ベースのAIプロダクトのMVPを素早く開発する
+                  </p>
+                </div>
+                <div className="md:col-span-2">
+                  <h3 className="text-xl font-bold text-purple-400 mb-2">
+                    私の貢献（具体的な経験とスキル）
+                  </h3>
+                  <p className="text-gray-300">
+                    高速なMVP開発で、アイデアを即、形にします。
+                    <br />
+                    LLM等を活用した企画から、Next.js/TypeScriptによる実装・テストまで全工程を独力で完遂。ユーザー課題を起点とした高速な価値検証サイクルで、ビジネスを加速させます。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Strength 2 */}
+            <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <h3 className="text-xl font-bold text-blue-400 mb-2">
+                    期待される役割
+                  </h3>
+                  <p className="text-gray-300">
+                    特定技術分野を主導し、研究技術を商用安定版へと転換する
+                  </p>
+                </div>
+                <div className="md:col-span-2">
+                  <h3 className="text-xl font-bold text-purple-400 mb-2">
+                    私の貢献（具体的な経験とスキル）
+                  </h3>
+                  <p className="text-gray-300">
+                    AI技術を「研究」で終わらせません。
+                    <br />
+                    最新AI技術と堅牢なフレームワーク(Django/Next.js)を融合させるアーキテクチャ設計が強みです。技術シーズをビジネス要件と両立させ、安定稼働する商用サービスへと昇華させます。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Strength 3 */}
+            <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-all duration-300">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <h3 className="text-xl font-bold text-blue-400 mb-2">
+                    期待される役割
+                  </h3>
+                  <p className="text-gray-300">
+                    複数のステークホルダーが関わるプロジェクトをリードする
+                  </p>
+                </div>
+                <div className="md:col-span-2">
+                  <h3 className="text-xl font-bold text-purple-400 mb-2">
+                    私の貢献（具体的な経験とスキル）
+                  </h3>
+                  <p className="text-gray-300">
+                    POとしてチームを牽引し、複雑なプロジェクトを成功へ導きます。
+                    <br />
+                    経営層を含む多様な関係者を巻き込む合意形成力と、スクラム開発の主導経験が強み。メンバーの心理まで踏み込み、チームの推進力を最大化します。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Strength 4 */}
+            <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 transition-all duration-300">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <h3 className="text-xl font-bold text-blue-400 mb-2">
+                    期待される役割
+                  </h3>
+                  <p className="text-gray-300">
+                    安定的なシステム運用と素早い変更対応を両立する設計・実装の基準を確立する
+                  </p>
+                </div>
+                <div className="md:col-span-2">
+                  <h3 className="text-xl font-bold text-purple-400 mb-2">
+                    私の貢献（具体的な経験とスキル）
+                  </h3>
+                  <p className="text-gray-300">
+                    品質とスピードを両立する「仕組み」を構築します。
+                    <br />
+                    TypeScript導入で実証済みの、変更に強く安定した開発プロセスを設計。組織全体の生産性を向上させる、実用的な開発/品質基準を確立します。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Strength 5 */}
+            <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <h3 className="text-xl font-bold text-blue-400 mb-2">
+                    期待される役割
+                  </h3>
+                  <p className="text-gray-300">
+                    AIなどの新技術を活用し、開発のスピードと品質を向上させる
+                  </p>
+                </div>
+                <div className="md:col-span-2">
+                  <h3 className="text-xl font-bold text-purple-400 mb-2">
+                    私の貢献（具体的な経験とスキル）
+                  </h3>
+                  <p className="text-gray-300">
+                    技術探求を、チームと組織の力に変えます。
+                    <br />
+                    最新AIツール等を常に探求し、開発へ即応用。得た知見は技術記事として積極的に発信し、組織全体の技術力向上とナレッジ共有文化に貢献します。
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Skills Section */}
-      <section className="min-h-screen flex items-center justify-center py-20 bg-gray-800/30">
+      <section className="min-h-screen flex items-center justify-center py-20">
         <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
             Technical Skills
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold mb-8 text-blue-400">Frontend</h3>
+              <h3 className="text-2xl font-bold mb-8 text-blue-400">
+                Frontend
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-4 bg-gray-800/50 rounded-lg">
                   <span>React</span>
@@ -108,7 +261,9 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-8 text-purple-400">Backend & Others</h3>
+              <h3 className="text-2xl font-bold mb-8 text-purple-400">
+                Backend & Others
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-4 bg-gray-800/50 rounded-lg">
                   <span>Python (Django)</span>
@@ -153,10 +308,16 @@ export default function Home() {
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <p className="text-xl mb-4 text-gray-300">Dify × Next.js × AIで実現する革新的UX</p>
+                  <p className="text-xl mb-4 text-gray-300">
+                    Dify × Next.js × AIで実現する革新的UX
+                  </p>
                   <div className="space-y-2">
-                    <p className="text-blue-400 font-semibold">✓ 新技術の学習と実践への適応能力</p>
-                    <p className="text-purple-400 font-semibold">✓ ノーコードツールとコーディングの融合</p>
+                    <p className="text-blue-400 font-semibold">
+                      ✓ 新技術の学習と実践への適応能力
+                    </p>
+                    <p className="text-purple-400 font-semibold">
+                      ✓ ノーコードツールとコーディングの融合
+                    </p>
                   </div>
                 </div>
                 <div className="bg-gray-800/50 p-4 rounded-lg">
@@ -175,7 +336,9 @@ export default function Home() {
             <div className="bg-gradient-to-r from-green-600/10 to-blue-600/10 p-8 rounded-2xl border border-gray-700">
               <div className="flex items-center gap-4 mb-6">
                 <Zap className="w-8 h-8 text-yellow-400" />
-                <h3 className="text-3xl font-bold">1日で構築したブログアプリ</h3>
+                <h3 className="text-3xl font-bold">
+                  1日で構築したブログアプリ
+                </h3>
                 <a
                   href="https://knownext-gamma.vercel.app/"
                   target="_blank"
@@ -186,12 +349,18 @@ export default function Home() {
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
-              <p className="text-xl mb-4 text-gray-300">Cursor活用による超高速開発</p>
-              <p className="text-green-400 font-semibold text-lg">✓ 品質とスピードの両立</p>
+              <p className="text-xl mb-4 text-gray-300">
+                Cursor活用による超高速開発
+              </p>
+              <p className="text-green-400 font-semibold text-lg">
+                ✓ 品質とスピードの両立
+              </p>
               <div className="mt-4">
                 <div className="inline-block bg-gray-800 px-4 py-2 rounded-lg">
                   <span className="text-gray-400">開発時間：</span>
-                  <span className="text-2xl font-bold text-green-400 ml-2">24時間</span>
+                  <span className="text-2xl font-bold text-green-400 ml-2">
+                    24時間
+                  </span>
                 </div>
               </div>
             </div>
@@ -215,10 +384,16 @@ export default function Home() {
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <p className="text-xl mb-4 text-gray-300">300件超のアイデアをシステム化</p>
+                  <p className="text-xl mb-4 text-gray-300">
+                    300件超のアイデアをシステム化
+                  </p>
                   <div className="space-y-2">
-                    <p className="text-purple-400 font-semibold">✓ 複数のステークホルダーとのプロジェクトリード経験</p>
-                    <p className="text-pink-400 font-semibold">✓ プロダクトオーナーとしてスクラム開発を推進</p>
+                    <p className="text-purple-400 font-semibold">
+                      ✓ 複数のステークホルダーとのプロジェクトリード経験
+                    </p>
+                    <p className="text-pink-400 font-semibold">
+                      ✓ プロダクトオーナーとしてスクラム開発を推進
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
@@ -227,7 +402,9 @@ export default function Home() {
                     <div className="relative bg-gray-800 p-6 rounded-lg">
                       <div className="text-center">
                         <p className="text-gray-400">関係者数</p>
-                        <p className="text-4xl font-bold text-purple-400">部長・マネージャー含む20名+</p>
+                        <p className="text-4xl font-bold text-purple-400">
+                          部長・マネージャー含む20名+
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -241,12 +418,18 @@ export default function Home() {
             <div className="bg-gradient-to-r from-orange-600/10 to-red-600/10 p-8 rounded-2xl border border-gray-700">
               <div className="flex items-center gap-4 mb-6">
                 <Rocket className="w-8 h-8 text-orange-400" />
-                <h3 className="text-3xl font-bold">パフォーマンス改善プロジェクト</h3>
+                <h3 className="text-3xl font-bold">
+                  パフォーマンス改善プロジェクト
+                </h3>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <p className="text-xl mb-4 text-gray-300">OJTプレゼンでのモダナイズ提案</p>
-                  <p className="text-orange-400 font-semibold">✓ 品質基準の向上への取り組み</p>
+                  <p className="text-xl mb-4 text-gray-300">
+                    OJTプレゼンでのモダナイズ提案
+                  </p>
+                  <p className="text-orange-400 font-semibold">
+                    ✓ 品質基準の向上への取り組み
+                  </p>
                 </div>
                 <div className="flex gap-4">
                   <div className="bg-red-900/30 p-4 rounded-lg flex-1">
@@ -287,8 +470,12 @@ export default function Home() {
                 <Code className="w-8 h-8 text-teal-400" />
                 <h3 className="text-3xl font-bold">プログラミング教育</h3>
               </div>
-              <p className="text-xl mb-4 text-gray-300">チューターとして初心者をサポート</p>
-              <p className="text-teal-400 font-semibold">✓ 技術を分かりやすく伝える能力</p>
+              <p className="text-xl mb-4 text-gray-300">
+                チューターとして初心者をサポート
+              </p>
+              <p className="text-teal-400 font-semibold">
+                ✓ 技術を分かりやすく伝える能力
+              </p>
             </div>
           </div>
         </div>
@@ -302,12 +489,20 @@ export default function Home() {
           </h2>
           <div className="space-y-8">
             <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 p-8 rounded-2xl border border-blue-500">
-              <h3 className="text-3xl font-bold mb-4 text-blue-400">スピード開発力</h3>
-              <p className="text-xl text-gray-300">1日でブログアプリ構築。Cursor × AIで実現する超高速開発</p>
+              <h3 className="text-3xl font-bold mb-4 text-blue-400">
+                スピード開発力
+              </h3>
+              <p className="text-xl text-gray-300">
+                1日でブログアプリ構築。Cursor × AIで実現する超高速開発
+              </p>
             </div>
             <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 p-8 rounded-2xl border border-purple-500">
-              <h3 className="text-3xl font-bold mb-4 text-purple-400">実行力</h3>
-              <p className="text-xl text-gray-300">アイデアを形に。プロジェクト立ち上げから推進まで</p>
+              <h3 className="text-3xl font-bold mb-4 text-purple-400">
+                実行力
+              </h3>
+              <p className="text-xl text-gray-300">
+                アイデアを形に。プロジェクト立ち上げから推進まで
+              </p>
             </div>
           </div>
           <div className="mt-16">
@@ -316,9 +511,7 @@ export default function Home() {
               価値を生み出すエンジニア
             </p>
             <div className="mt-8">
-              <p className="text-4xl font-bold text-white">
-                ARIMURA HIROAKI
-              </p>
+              <p className="text-4xl font-bold text-white">ARIMURA HIROAKI</p>
               <div className="h-1 w-48 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-4"></div>
             </div>
           </div>

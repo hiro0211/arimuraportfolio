@@ -104,7 +104,7 @@ const GrowthStorySection: React.FC = () => {
                   <br />
                 </h1>
                 <p className="text-lg md:text-xl text-white/95 leading-relaxed drop-shadow-lg mb-8 max-w-lg">
-                この想いを、AIとビジネスの力で社会の仕組みに変える。
+                  この想いを、AIとビジネスの力で社会の仕組みに変える。
                 </p>
 
                 {/* シンプルで信頼感のあるCTA */}
@@ -219,13 +219,146 @@ const GrowthStorySection: React.FC = () => {
             </div>
           </div>
 
+          {/* サブセクション③-1 期待される役割 */}
+          <div id="expected-roles" className="mb-20 animate-on-scroll">
+            <div className="transition-all duration-1000 opacity-100 translate-y-0">
+              <div className="bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-2xl border-l-4 border-indigo-500 mb-8">
+                <h3 className="text-2xl font-bold mb-6 text-indigo-700 flex items-center">
+                  <FontAwesomeIcon icon={faBullseye} className="mr-3" />
+                  期待される役割
+                </h3>
+
+                <div className="space-y-4">
+                  {/* Role 1 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-indigo-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-indigo-50 hover:border-indigo-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-indigo-600 mb-2 flex items-center">
+                      <FontAwesomeIcon icon={faBullseye} className="mr-2" />
+                      顧客価値ベースのAIプロダクトのMVPを素早く開発する
+                    </h4>
+                  </div>
+
+                  {/* Role 2 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-blue-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-blue-50 hover:border-blue-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-blue-600 mb-2 flex items-center">
+                      <FontAwesomeIcon icon={faBullseye} className="mr-2" />
+                      特定技術分野を主導し、研究技術を商用安定版へと転換する
+                    </h4>
+                  </div>
+
+                  {/* Role 3 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-purple-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-purple-50 hover:border-purple-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-purple-600 mb-2 flex items-center">
+                      <FontAwesomeIcon icon={faBullseye} className="mr-2" />
+                      複数のステークホルダーが関わるプロジェクトをリードする
+                    </h4>
+                  </div>
+
+                  {/* Role 4 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-green-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-green-50 hover:border-green-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-green-600 mb-2 flex items-center">
+                      <FontAwesomeIcon icon={faBullseye} className="mr-2" />
+                      安定的なシステム運用と素早い変更対応を両立する設計・実装の基準を確立する
+                    </h4>
+                  </div>
+
+                  {/* Role 5 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-teal-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-teal-50 hover:border-teal-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-teal-600 mb-2 flex items-center">
+                      <FontAwesomeIcon icon={faBullseye} className="mr-2" />
+                      AIなどの新技術を活用し、開発のスピードと品質を向上させる
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* サブセクション③-2 発揮できる私の強み */}
+          <div id="my-strengths" className="mb-20 animate-on-scroll">
+            <div className="transition-all duration-1000 opacity-100 translate-y-0">
+              <div className="bg-gradient-to-r from-rose-50 to-orange-50 p-8 rounded-2xl border-l-4 border-rose-500 mb-8">
+                <h3 className="text-2xl font-bold mb-6 text-rose-700 flex items-center">
+                  <FontAwesomeIcon icon={faRocket} className="mr-3" />
+                  発揮できる私の強み
+                </h3>
+
+                <div className="space-y-6">
+                  {/* Strength 1 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-rose-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-rose-50 hover:border-rose-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-orange-600 mb-3 flex items-center">
+                      <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
+                      高速MVP開発での貢献
+                    </h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      高速なMVP開発で、アイデアを即、形にします。
+                      <br />
+                      LLM等を活用した企画から、Next.js/TypeScriptによる実装・テストまで全工程を独力で完遂。ユーザー課題を起点とした高速な価値検証サイクルで、ビジネスを加速させます。
+                    </p>
+                  </div>
+
+                  {/* Strength 2 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-blue-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-blue-50 hover:border-blue-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-purple-600 mb-3 flex items-center">
+                      <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
+                      研究技術の商用化での貢献
+                    </h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      AI技術を「研究」で終わらせません。
+                      <br />
+                      最新AI技術と堅牢なフレームワーク(Django/Next.js)を融合させるアーキテクチャ設計が強みです。技術シーズをビジネス要件と両立させ、安定稼働する商用サービスへと昇華させます。
+                    </p>
+                  </div>
+
+                  {/* Strength 3 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-green-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-green-50 hover:border-green-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-emerald-600 mb-3 flex items-center">
+                      <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
+                      プロジェクトリーダーシップでの貢献
+                    </h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      POとしてチームを牽引し、複雑なプロジェクトを成功へ導きます。
+                      <br />
+                      経営層を含む多様な関係者を巻き込む合意形成力と、スクラム開発の主導経験が強み。メンバーの心理まで踏み込み、チームの推進力を最大化します。
+                    </p>
+                  </div>
+
+                  {/* Strength 4 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-yellow-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-yellow-50 hover:border-yellow-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-amber-600 mb-3 flex items-center">
+                      <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
+                      品質基準確立での貢献
+                    </h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      品質とスピードを両立する「仕組み」を構築します。
+                      <br />
+                      TypeScript導入で実証済みの、変更に強く安定した開発プロセスを設計。組織全体の生産性を向上させる、実用的な開発/品質基準を確立します。
+                    </p>
+                  </div>
+
+                  {/* Strength 5 */}
+                  <div className="bg-white p-6 rounded-xl shadow-lg border border-teal-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-teal-50 hover:border-teal-400 cursor-pointer">
+                    <h4 className="text-lg font-bold text-cyan-600 mb-3 flex items-center">
+                      <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
+                      新技術活用での貢献
+                    </h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      技術探求を、チームと組織の力に変えます。
+                      <br />
+                      最新AIツール等を常に探求し、開発へ即応用。得た知見は技術記事として積極的に発信し、組織全体の技術力向上とナレッジ共有文化に貢献します。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* サブセクション④ 活かせそうな経験・スキル */}
           <div id="skills-experience" className="mb-20 animate-on-scroll">
             <div className="transition-all duration-1000 opacity-100 translate-y-0">
               <div className="bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-2xl border-l-4 border-indigo-500 mb-8">
                 <h3 className="text-2xl font-bold mb-6 text-indigo-700 flex items-center">
                   <FontAwesomeIcon icon={faBolt} className="mr-3" />
-                  活かせる経験・スキル
+                  プロジェクト実績
                 </h3>
                 <div className="grid grid-cols-1 gap-8 mb-8">
                   <div className="mb-8">
@@ -626,46 +759,7 @@ const GrowthStorySection: React.FC = () => {
                 </div>
               </div>
 
-              {/* まとめ */}
-              <div className="bg-gradient-to-r from-indigo-100 to-blue-100 p-6 rounded-xl border border-indigo-200">
-                <h4 className="font-bold text-indigo-700 mb-4 flex items-center">
-                  <FontAwesomeIcon
-                    icon={faBolt}
-                    className="mr-3 text-indigo-600"
-                  />
-                  活かせる2つの強み
-                </h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-white p-4 rounded-lg shadow-sm border border-blue-200 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:bg-blue-50 cursor-pointer">
-                    <div className="flex items-center mb-3">
-                      <FontAwesomeIcon
-                        icon={faBolt}
-                        className="text-blue-600 text-2xl mr-3 transition-transform hover:scale-125"
-                      />
-                      <h5 className="font-bold text-blue-700 transition-colors hover:text-blue-800">
-                        高速開発力
-                      </h5>
-                    </div>
-                    <p className="text-gray-700 text-sm transition-colors hover:text-blue-700">
-                      AIツールを効果的に活用して、短期間でプロダクトを開発できる技術力とスピード感
-                    </p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:bg-green-50 cursor-pointer">
-                    <div className="flex items-center mb-3">
-                      <FontAwesomeIcon
-                        icon={faRocket}
-                        className="text-green-600 text-2xl mr-3 transition-transform hover:scale-125"
-                      />
-                      <h5 className="font-bold text-green-700 transition-colors hover:text-green-800">
-                        実行力
-                      </h5>
-                    </div>
-                    <p className="text-gray-700 text-sm transition-colors hover:text-green-700">
-                      アイデアを形にして実際に動くプロダクトまで持っていく行動力と継続力
-                    </p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
