@@ -758,8 +758,69 @@ const GrowthStorySection: React.FC = () => {
                   </div>
                 </div>
               </div>
+              {/* Vision セクション */}
+              <div id="vision" className="mb-20 animate-on-scroll">
+                <div className="transition-all duration-1000 opacity-100 translate-y-0">
+                  <div className="bg-gradient-to-r from-violet-50 to-purple-50 p-8 rounded-2xl border-l-4 border-violet-500 mb-8">
+                    <h3 className="text-2xl font-bold mb-6 text-violet-700 flex items-center">
+                      <FontAwesomeIcon icon={faEye} className="mr-3" />
+                      Vision
+                    </h3>
 
-              
+                    {/* タイトル */}
+                    <div className="bg-white p-6 rounded-xl shadow-lg border border-violet-200 mb-6">
+                      <h4 className="text-xl font-bold text-violet-700 text-center leading-relaxed">
+                        技術とビジネスを繋ぐ「架け橋」として、
+                        <br />
+                        Kozuchiの事業価値を最大化します
+                      </h4>
+                    </div>
+
+                    {/* 本文 */}
+                    <div className="bg-white/70 backdrop-blur-sm p-6 rounded-xl border border-violet-200 space-y-4">
+                      <p className="text-gray-700 text-base leading-relaxed">
+                        私の強みである
+                        <span className="font-bold text-violet-700 bg-violet-100 px-2 py-1 rounded mx-1">
+                          「①アイデアを即、形にする行動力」
+                        </span>
+                        <span className="font-bold text-purple-700 bg-purple-100 px-2 py-1 rounded mx-1">
+                          「②多様な関係者を巻き込む共創力」
+                        </span>
+                        <span className="font-bold text-indigo-700 bg-indigo-100 px-2 py-1 rounded mx-1">
+                          「③目標を完遂するプロジェクト推進力」
+                        </span>
+                        を掛け合わせ、Kozuchiのビジネス価値最大化をリードします。
+                      </p>
+
+                      <p className="text-gray-700 text-base leading-relaxed font-medium">
+                        しかし、私の役割は単なる「橋渡し」に留まりません。
+                      </p>
+
+                      <div className="bg-gradient-to-r from-violet-50 to-purple-50 p-4 rounded-lg border-l-4 border-violet-400">
+                        <p className="text-gray-700 text-base leading-relaxed">
+                          研究技術に顧客のニーズという火を灯し、価値あるMVPを最速で生み出す。
+                          <br />
+                          そして、プロダクトオーナーとして自らが先頭に立ち、PoCで終わらせることなく、情熱をもって商用化への道を切り拓く。
+                        </p>
+                      </div>
+
+                      <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-4 rounded-lg border border-amber-200 text-center">
+                        <p className="text-gray-800 text-base leading-relaxed">
+                          技術と人、ビジネスと顧客が出会うことで生まれる化学反応を最大化する
+                          <span className="font-bold text-amber-700 bg-amber-200 px-3 py-1 rounded-full mx-2 text-lg">
+                            「触媒」
+                          </span>
+                          となり、
+                          <span className="font-bold text-red-700">
+                            KPI10億円
+                          </span>
+                          という目標達成を必ず実現させてみせます。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
