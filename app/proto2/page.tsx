@@ -122,8 +122,8 @@ const GrowthStorySection: React.FC = () => {
                 </h3>
 
                 {/* プロフィール画像セクション */}
-                <div className="flex justify-center mb-8">
-                  <div className="relative group">
+                <div className="flex flex-col items-center mb-8">
+                  <div className="relative group mb-4">
                     <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-purple-300 shadow-lg transition-all duration-300 group-hover:border-purple-500 group-hover:shadow-xl group-hover:scale-105">
                       <Image
                         src="/profileImage.jpg"
@@ -135,6 +135,16 @@ const GrowthStorySection: React.FC = () => {
                     </div>
                     {/* 装飾的なリング */}
                     <div className="absolute inset-0 rounded-full border-2 border-purple-200 opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+
+                  {/* 名前セクション */}
+                  <div className="text-center">
+                    <h4 className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 bg-clip-text text-transparent mb-1 transition-all duration-300 hover:scale-105">
+                      有村大旭
+                    </h4>
+                    <p className="text-lg text-purple-500 font-medium tracking-wide transition-colors duration-300 hover:text-pink-500">
+                      Arimura Hiroaki
+                    </p>
                   </div>
                 </div>
 
