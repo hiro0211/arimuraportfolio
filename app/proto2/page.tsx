@@ -631,6 +631,251 @@ const GrowthStorySection: React.FC = () => {
                     </div>
                   </div>
                 </div>{" "}
+
+                                {/* ⑦GitHub Copilotを活用したWebサイトのモダナイズ化 */}
+                                <div className="mb-8">
+                  <div className="w-full">
+                    <div className="bg-gradient-to-br from-white via-orange-25 to-orange-50 p-8 shadow-xl border-2 border-orange-300 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-gradient-to-br hover:from-orange-50 hover:via-orange-100 hover:to-orange-150 hover:border-orange-400 cursor-pointer relative overflow-hidden">
+                      <div className="absolute top-0 right-0 w-40 h-40 opacity-10">
+                        <div className="w-full h-full bg-orange-400 rounded-full blur-3xl"></div>
+                      </div>
+                      <div className="absolute bottom-0 left-0 w-32 h-32 opacity-10">
+                        <div className="w-full h-full bg-yellow-400 rounded-full blur-2xl"></div>
+                      </div>
+
+                      <div className="relative z-10">
+                        <div className="flex items-center mb-6">
+                          <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full p-4 mr-4 transition-all duration-300 hover:from-orange-200 hover:to-orange-300 hover:scale-110">
+                            <FontAwesomeIcon
+                              icon={faRocket}
+                              className="text-orange-600 text-2xl transition-transform hover:scale-125 hover:rotate-12"
+                            />
+                          </div>
+                          <div>
+                            <h4 className="text-2xl font-bold text-gray-800 transition-colors hover:text-orange-800 mb-2">
+                              GitHub Copilotを活用したWebサイトのモダナイズ化
+                            </h4>
+                            <p className="text-orange-600 text-lg font-medium">
+                              レガシーサイトの全面刷新
+                            </p>
+                          </div>
+                        </div>
+
+                        <div className="mb-6">
+                          <p className="text-gray-700 text-base mb-6 transition-colors hover:text-orange-700 leading-relaxed">
+                            既存のHTML/CSS/JavaScriptサイトをNext.js/TypeScript/TailwindCSSを使用してモダンなアーキテクチャに全面刷新。パフォーマンスとユーザー体験の大幅改善を実現しました。
+                          </p>
+
+                          {/* パフォーマンス改善のビフォーアフター画像 */}
+                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                            {/* Before Image */}
+                            <div className="bg-white p-4 rounded-lg shadow-sm border border-red-100 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:bg-red-50 hover:border-red-300 cursor-pointer">
+                              <div className="flex items-center mb-3">
+                                <div className="bg-red-100 rounded-full p-2 mr-3 transition-all duration-300 hover:bg-red-200">
+                                  <FontAwesomeIcon
+                                    icon={faWrench}
+                                    className="text-red-600 text-lg transition-transform hover:scale-125"
+                                  />
+                                </div>
+                                <div>
+                                  <h5 className="font-semibold text-red-800 transition-colors hover:text-red-900">
+                                    Before
+                                  </h5>
+                                  <p className="text-red-600 text-xs">
+                                    従来のWebサイト
+                                  </p>
+                                </div>
+                              </div>
+                              <div className="mb-4">
+                                <Image
+                                  src="/BeforeOJTWebSite.png"
+                                  alt="モダナイズ前のWebサイトのパフォーマンス - PageSpeed Insights スコア74"
+                                  width={400}
+                                  height={300}
+                                  className="w-full h-auto rounded-lg border border-red-200 transition-all duration-300 hover:scale-105"
+                                />
+                              </div>
+                              <ul className="text-gray-600 text-sm space-y-2 mb-4">
+                                <li className="transition-all duration-200 hover:text-red-700 hover:font-medium hover:translate-x-2">
+                                  • HTML/CSS/JavaScript
+                                </li>
+                                <li className="transition-all duration-200 hover:text-red-700 hover:font-medium hover:translate-x-2">
+                                  • パフォーマンススコア: 74
+                                </li>
+                                <li className="transition-all duration-200 hover:text-red-700 hover:font-medium hover:translate-x-2">
+                                  • 保守性に課題
+                                </li>
+                                <li className="transition-all duration-200 hover:text-red-700 hover:font-medium hover:translate-x-2">
+                                  • モバイル対応が不十分
+                                </li>
+                              </ul>
+                              <a
+                                href="https://hiro0211.github.io/Self-Introduction-webSite9-4/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center text-red-600 hover:text-red-800 font-medium text-sm transition-all duration-200 hover:translate-x-2"
+                              >
+                                <FontAwesomeIcon
+                                  icon={faEye}
+                                  className="mr-2 transition-transform hover:scale-125"
+                                />
+                                旧サイトを見る
+                              </a>
+                            </div>
+
+                            {/* After Image */}
+                            <div className="bg-white p-4 rounded-lg shadow-sm border border-green-100 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:bg-green-50 hover:border-green-300 cursor-pointer">
+                              <div className="flex items-center mb-3">
+                                <div className="bg-green-100 rounded-full p-2 mr-3 transition-all duration-300 hover:bg-green-200">
+                                  <FontAwesomeIcon
+                                    icon={faRocket}
+                                    className="text-green-600 text-lg transition-transform hover:scale-125"
+                                  />
+                                </div>
+                                <div>
+                                  <h5 className="font-semibold text-green-800 transition-colors hover:text-green-900">
+                                    After
+                                  </h5>
+                                  <p className="text-green-600 text-xs">
+                                    モダンWebサイト
+                                  </p>
+                                </div>
+                              </div>
+                              <div className="mb-4">
+                                <Image
+                                  src="/AfterOJTWebSite2.png"
+                                  alt="モダナイズ後のWebサイトのパフォーマンス - PageSpeed Insights 全項目100点"
+                                  width={400}
+                                  height={300}
+                                  className="w-full h-auto rounded-lg border border-green-200 transition-all duration-300 hover:scale-105"
+                                />
+                              </div>
+                              <ul className="text-gray-600 text-sm space-y-2 mb-4">
+                                <li className="transition-all duration-200 hover:text-green-700 hover:font-medium hover:translate-x-2">
+                                  • Next.js + TypeScript
+                                </li>
+                                <li className="transition-all duration-200 hover:text-green-700 hover:font-medium hover:translate-x-2">
+                                  • パフォーマンススコア: 100
+                                </li>
+                                <li className="transition-all duration-200 hover:text-green-700 hover:font-medium hover:translate-x-2">
+                                  • レスポンシブデザイン
+                                </li>
+                                <li className="transition-all duration-200 hover:text-green-700 hover:font-medium hover:translate-x-2">
+                                  • モダンなアニメーション
+                                </li>
+                              </ul>
+                              <a
+                                href="https://claude-ojt-plan5-15.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center text-green-600 hover:text-green-800 font-medium text-sm transition-all duration-200 hover:translate-x-2"
+                              >
+                                <FontAwesomeIcon
+                                  icon={faEye}
+                                  className="mr-2 transition-transform hover:scale-125"
+                                />
+                                新サイトを見る
+                              </a>
+                            </div>
+                          </div>
+
+                          {/* 改善効果 */}
+                          <div className="bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-orange-200">
+                            <h5 className="font-semibold text-gray-800 mb-3 flex items-center">
+                              <FontAwesomeIcon
+                                icon={faTachometerAlt}
+                                className="text-orange-600 mr-2"
+                              />
+                              モダナイズ化による改善効果
+                            </h5>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                              <div className="text-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 cursor-pointer">
+                                <div className="text-2xl mb-2 transition-transform hover:scale-125">
+                                  ⚡
+                                </div>
+                                <p className="text-xs font-medium text-gray-700 transition-colors hover:text-orange-700 hover:font-bold">
+                                  パフォーマンス
+                                </p>
+                                <p className="text-xs text-gray-600 transition-colors hover:text-orange-600">
+                                  74 → 100点
+                                </p>
+                              </div>
+                              <div className="text-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 cursor-pointer">
+                                <div className="text-2xl mb-2 transition-transform hover:scale-125">
+                                  🔧
+                                </div>
+                                <p className="text-xs font-medium text-gray-700 transition-colors hover:text-orange-700 hover:font-bold">
+                                  保守性
+                                </p>
+                                <p className="text-xs text-gray-600 transition-colors hover:text-orange-600">
+                                  コンポーネント化
+                                </p>
+                              </div>
+                              <div className="text-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 cursor-pointer">
+                                <div className="text-2xl mb-2 transition-transform hover:scale-125">
+                                  📱
+                                </div>
+                                <p className="text-xs font-medium text-gray-700 transition-colors hover:text-orange-700 hover:font-bold">
+                                  型安全性
+                                </p>
+                                <p className="text-xs text-gray-600 transition-colors hover:text-orange-600">
+                                  TypeScript導入
+                                </p>
+                              </div>
+                              <div className="text-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 cursor-pointer">
+                                <div className="text-2xl mb-2 transition-transform hover:scale-125">
+                                  🎨
+                                </div>
+                                <p className="text-xs font-medium text-gray-700 transition-colors hover:text-orange-700 hover:font-bold">
+                                  UI/UX
+                                </p>
+                                <p className="text-xs text-gray-600 transition-colors hover:text-orange-600">
+                                  モダンデザイン
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-orange-200 mt-4">
+                            <h5 className="font-semibold text-gray-800 mb-3 flex items-center">
+                              <span className="text-orange-600 mr-2">🛠️</span>
+                              技術スタック
+                            </h5>
+                            <div className="flex flex-wrap gap-2">
+                              <span className="bg-gradient-to-r from-orange-100 to-orange-200 text-orange-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-orange-200 hover:to-orange-300 hover:scale-105">
+                                GitHub Copilot
+                              </span>
+                              <span className="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-blue-200 hover:to-blue-300 hover:scale-105">
+                                Next.js
+                              </span>
+                              <span className="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-yellow-200 hover:to-yellow-300 hover:scale-105">
+                                TypeScript
+                              </span>
+                              <span className="bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-purple-200 hover:to-purple-300 hover:scale-105">
+                                TailwindCSS
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <a
+                          href="https://claude-ojt-plan5-15.vercel.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:from-orange-600 hover:to-orange-700 hover:translate-x-2 hover:shadow-lg group"
+                        >
+                          <FontAwesomeIcon
+                            icon={faChevronRight}
+                            className="mr-3 transition-transform group-hover:scale-125 group-hover:translate-x-1"
+                          />
+                          モダンサイトを見る
+                          <span className="ml-2 text-sm opacity-75">→</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 {/* ⑤プログラミング指導経験 */}
                 <div className="mb-8">
                   <div className="w-full">
@@ -767,6 +1012,7 @@ const GrowthStorySection: React.FC = () => {
                     </div>
                   </div>
                 </div>
+
               </div>
               {/* Vision セクション */}
               <div id="vision" className="mb-20 animate-on-scroll">
