@@ -97,14 +97,14 @@ const GrowthStorySection: React.FC = () => {
                 </div> */}
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                   <span className="text-white drop-shadow-2xl">
-                    AIは、人の心と時間を
+                    テクノロジーで、生産性を上げ
                     <br />
-                    を守るためにある。
+                    心の病気をなくす
                   </span>
                   <br />
                 </h1>
                 <p className="text-lg md:text-xl text-white/95 leading-relaxed drop-shadow-lg mb-8 max-w-lg">
-                  この想いを、AIとビジネスの力で社会の仕組みに変える。
+                  この想いを、テクノロジーとビジネスの力で社会の仕組みに変える。
                 </p>
 
                 {/* シンプルで信頼感のあるCTA */}
@@ -228,8 +228,7 @@ const GrowthStorySection: React.FC = () => {
               </div>
             </div>
           </div>
-
-          {/* サブセクション③-1 期待される役割 */}
+          {/* 
           <div id="expected-roles" className="mb-20 animate-on-scroll">
             <div className="transition-all duration-1000 opacity-100 translate-y-0">
               <div className="bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-2xl border-l-4 border-indigo-500 mb-8">
@@ -239,7 +238,6 @@ const GrowthStorySection: React.FC = () => {
                 </h3>
 
                 <div className="space-y-4">
-                  {/* Role 1 */}
                   <div className="bg-white p-6 rounded-xl shadow-lg border border-indigo-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-indigo-50 hover:border-indigo-400 cursor-pointer">
                     <h4 className="text-lg font-bold text-indigo-600 mb-2 flex items-center">
                       <FontAwesomeIcon icon={faBullseye} className="mr-2" />
@@ -247,7 +245,6 @@ const GrowthStorySection: React.FC = () => {
                     </h4>
                   </div>
 
-                  {/* Role 2 */}
                   <div className="bg-white p-6 rounded-xl shadow-lg border border-blue-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-blue-50 hover:border-blue-400 cursor-pointer">
                     <h4 className="text-lg font-bold text-blue-600 mb-2 flex items-center">
                       <FontAwesomeIcon icon={faBullseye} className="mr-2" />
@@ -255,7 +252,6 @@ const GrowthStorySection: React.FC = () => {
                     </h4>
                   </div>
 
-                  {/* Role 3 */}
                   <div className="bg-white p-6 rounded-xl shadow-lg border border-purple-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-purple-50 hover:border-purple-400 cursor-pointer">
                     <h4 className="text-lg font-bold text-purple-600 mb-2 flex items-center">
                       <FontAwesomeIcon icon={faBullseye} className="mr-2" />
@@ -263,7 +259,6 @@ const GrowthStorySection: React.FC = () => {
                     </h4>
                   </div>
 
-                  {/* Role 4 */}
                   <div className="bg-white p-6 rounded-xl shadow-lg border border-green-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-green-50 hover:border-green-400 cursor-pointer">
                     <h4 className="text-lg font-bold text-green-600 mb-2 flex items-center">
                       <FontAwesomeIcon icon={faBullseye} className="mr-2" />
@@ -271,7 +266,6 @@ const GrowthStorySection: React.FC = () => {
                     </h4>
                   </div>
 
-                  {/* Role 5 */}
                   <div className="bg-white p-6 rounded-xl shadow-lg border border-teal-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-teal-50 hover:border-teal-400 cursor-pointer">
                     <h4 className="text-lg font-bold text-teal-600 mb-2 flex items-center">
                       <FontAwesomeIcon icon={faBullseye} className="mr-2" />
@@ -281,8 +275,9 @@ const GrowthStorySection: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
+          {/* サブセクション③-2 発揮できる私の強み */}
           {/* サブセクション③-2 発揮できる私の強み */}
           <div id="my-strengths" className="mb-20 animate-on-scroll">
             <div className="transition-all duration-1000 opacity-100 translate-y-0">
@@ -293,68 +288,42 @@ const GrowthStorySection: React.FC = () => {
                 </h3>
 
                 <div className="space-y-6">
-                  {/* Strength 1 */}
+                  {/* Strength 1: 課題発見・解決力 */}
                   <div className="bg-white p-6 rounded-xl shadow-lg border border-rose-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-rose-50 hover:border-rose-400 cursor-pointer">
                     <h4 className="text-lg font-bold text-orange-600 mb-3 flex items-center">
                       <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
-                      高速MVP開発での貢献
+                      ビジネス価値を定義する「課題発見・解決力」
                     </h4>
                     <p className="text-gray-700 text-sm leading-relaxed">
-                      高速なMVP開発で、アイデアを即、形にします。
+                      表面的な要望の奥にある、本質的な課題を発見し、解決策を定義します。
                       <br />
-                      LLM等を活用した企画から、Next.js/TypeScriptによる実装・テストまで全工程を独力で完遂。ユーザー課題を起点とした高速な価値検証サイクルで、ビジネスを加速させます。
+                      プロダクトオーナーとしてユーザーインタビューを重ね、心理的な課題まで特定。技術的な実現可能性だけでなく、ビジネスインパクトを最大化する「何を、なぜ作るべきか」を導き出します。
                     </p>
                   </div>
 
-                  {/* Strength 2 */}
-                  <div className="bg-white p-6 rounded-xl shadow-lg border border-blue-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-blue-50 hover:border-blue-400 cursor-pointer">
-                    <h4 className="text-lg font-bold text-purple-600 mb-3 flex items-center">
-                      <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
-                      研究技術の商用化での貢献
-                    </h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">
-                      AI技術を「研究」で終わらせません。
-                      <br />
-                      最新AI技術と堅牢なフレームワーク(Django/Next.js)を融合させるアーキテクチャ設計が強みです。技術シーズをビジネス要件と両立させ、安定稼働する商用サービスへと昇華させます。
-                    </p>
-                  </div>
-
-                  {/* Strength 3 */}
+                  {/* Strength 2: 0→1実装力 */}
                   <div className="bg-white p-6 rounded-xl shadow-lg border border-green-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-green-50 hover:border-green-400 cursor-pointer">
                     <h4 className="text-lg font-bold text-emerald-600 mb-3 flex items-center">
                       <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
-                      プロジェクトリーダーシップでの貢献
+                      最新技術を駆使した「0→1実装力」
                     </h4>
                     <p className="text-gray-700 text-sm leading-relaxed">
-                      POとしてチームを牽引し、複雑なプロジェクトを成功へ導きます。
+                      アイデアを、机上の空論で終わらせません。
                       <br />
-                      経営層を含む多様な関係者を巻き込む合意形成力と、スクラム開発の主導経験が強み。メンバーの心理まで踏み込み、チームの推進力を最大化します。
+                      生成AI(LLM)やモダンなWeb技術(Next.js/TypeScript)を自律的に学習し、企画から実装までを独力で完遂。構想を具体的な「動くプロダクト」として迅速に形にする実行力があります。
                     </p>
                   </div>
 
-                  {/* Strength 4 */}
+                  {/* Strength 3: 共創力 */}
                   <div className="bg-white p-6 rounded-xl shadow-lg border border-yellow-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-yellow-50 hover:border-yellow-400 cursor-pointer">
                     <h4 className="text-lg font-bold text-amber-600 mb-3 flex items-center">
                       <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
-                      品質基準確立での貢献
+                      多様な関係者を巻き込む「共創力」
                     </h4>
                     <p className="text-gray-700 text-sm leading-relaxed">
-                      品質とスピードを両立する「仕組み」を構築します。
+                      一人では成し遂げられない、大きな価値をチームで創造します。
                       <br />
-                      TypeScript導入で実証済みの、変更に強く安定した開発プロセスを設計。組織全体の生産性を向上させる、実用的な開発/品質基準を確立します。
-                    </p>
-                  </div>
-
-                  {/* Strength 5 */}
-                  <div className="bg-white p-6 rounded-xl shadow-lg border border-teal-200 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-teal-50 hover:border-teal-400 cursor-pointer">
-                    <h4 className="text-lg font-bold text-cyan-600 mb-3 flex items-center">
-                      <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
-                      新技術活用での貢献
-                    </h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">
-                      技術探求を、チームと組織の力に変えます。
-                      <br />
-                      最新AIツール等を常に探求し、開発へ即応用。得た知見は技術記事として積極的に発信し、組織全体の技術力向上とナレッジ共有文化に貢献します。
+                      経営層を巻き込む合意形成、ユーザーとの対話、チームを牽引するリーダーシップなど、立場や組織の壁を越えて協力関係を築き、プロジェクトを成功へと導きます。
                     </p>
                   </div>
                 </div>
@@ -371,6 +340,83 @@ const GrowthStorySection: React.FC = () => {
                   プロジェクト実績
                 </h3>
                 <div className="grid grid-cols-1 gap-8 mb-8">
+                  {/* AIリーンキャンバス作成アプリ */}
+                  <div className="mb-8">
+                    <div className="w-full">
+                      <div className="bg-gradient-to-br from-white via-violet-25 to-violet-50 p-8 shadow-xl border-2 border-violet-300 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-gradient-to-br hover:from-violet-50 hover:via-violet-100 hover:to-violet-150 hover:border-violet-400 cursor-pointer relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-40 h-40 opacity-10">
+                          <div className="w-full h-full bg-violet-400 rounded-full blur-3xl"></div>
+                        </div>
+                        <div className="absolute bottom-0 left-0 w-32 h-32 opacity-10">
+                          <div className="w-full h-full bg-purple-400 rounded-full blur-2xl"></div>
+                        </div>
+
+                        <div className="relative z-10">
+                          <div className="flex items-center mb-6">
+                            <div className="bg-gradient-to-br from-violet-100 to-violet-200 rounded-full p-4 mr-4 transition-all duration-300 hover:from-violet-200 hover:to-violet-300 hover:scale-110">
+                              <FontAwesomeIcon
+                                icon={faLightbulb}
+                                className="text-violet-600 text-2xl transition-transform hover:scale-125 hover:rotate-12"
+                              />
+                            </div>
+                            <div>
+                              <h4 className="text-2xl font-bold text-gray-800 transition-colors hover:text-violet-800 mb-2">
+                                AIリーンキャンバス作成アプリ
+                              </h4>
+                              <p className="text-violet-600 text-lg font-medium">
+                                アイデアの種を、AIとの対話でビジネスの羅針盤へ
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="mb-6">
+                            <p className="text-gray-700 text-base mb-4 transition-colors hover:text-violet-700 leading-relaxed">
+                              わずか数分で、複雑なビジネス計画を一枚のキャンバスに可視化。DifyのAIワークフローを活用し、Next.js
+                              14とTypeScriptで構築した高速MVP開発の実践例。企画から実装までを独力で完遂し、アイデアを即座に形にする行動力を証明したプロジェクトです。
+                            </p>
+
+                            <div className="bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-violet-200">
+                              <h5 className="font-semibold text-gray-800 mb-3 flex items-center">
+                                <span className="text-violet-600 mr-2">🛠️</span>
+                                技術スタック
+                              </h5>
+                              <div className="flex flex-wrap gap-2">
+                                <span className="bg-gradient-to-r from-violet-100 to-violet-200 text-violet-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-violet-200 hover:to-violet-300 hover:scale-105">
+                                  Next.js 14
+                                </span>
+                                <span className="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-yellow-200 hover:to-yellow-300 hover:scale-105">
+                                  TypeScript
+                                </span>
+                                <span className="bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-purple-200 hover:to-purple-300 hover:scale-105">
+                                  TailwindCSS
+                                </span>
+                                <span className="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-green-200 hover:to-green-300 hover:scale-105">
+                                  Dify AI
+                                </span>
+                                <span className="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:from-blue-200 hover:to-blue-300 hover:scale-105">
+                                  AIワークフロー
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <a
+                            href="https://third-ai-create-lean-canvas.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center bg-gradient-to-r from-violet-500 to-violet-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:from-violet-600 hover:to-violet-700 hover:translate-x-2 hover:shadow-lg group"
+                          >
+                            <FontAwesomeIcon
+                              icon={faChevronRight}
+                              className="mr-3 transition-transform group-hover:scale-125 group-hover:translate-x-1"
+                            />
+                            アプリを試す
+                            <span className="ml-2 text-sm opacity-75">→</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div className="mb-8">
                     <div className="w-full">
                       <div className="bg-gradient-to-br from-white via-blue-25 to-blue-50 p-8 shadow-xl border-2 border-blue-300 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-gradient-to-br hover:from-blue-50 hover:via-blue-100 hover:to-blue-150 hover:border-blue-400 cursor-pointer relative overflow-hidden">
@@ -631,9 +677,8 @@ const GrowthStorySection: React.FC = () => {
                     </div>
                   </div>
                 </div>{" "}
-
-                                {/* ⑦GitHub Copilotを活用したWebサイトのモダナイズ化 */}
-                                <div className="mb-8">
+                {/* ⑦GitHub Copilotを活用したWebサイトのモダナイズ化 */}
+                <div className="mb-8">
                   <div className="w-full">
                     <div className="bg-gradient-to-br from-white via-orange-25 to-orange-50 p-8 shadow-xl border-2 border-orange-300 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:bg-gradient-to-br hover:from-orange-50 hover:via-orange-100 hover:to-orange-150 hover:border-orange-400 cursor-pointer relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-40 h-40 opacity-10">
@@ -875,7 +920,6 @@ const GrowthStorySection: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
                 {/* ⑤プログラミング指導経験 */}
                 <div className="mb-8">
                   <div className="w-full">
@@ -1012,10 +1056,9 @@ const GrowthStorySection: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
               </div>
               {/* Vision セクション */}
-              <div id="vision" className="mb-20 animate-on-scroll">
+              {/* <div id="vision" className="mb-20 animate-on-scroll">
                 <div className="transition-all duration-1000 opacity-100 translate-y-0">
                   <div className="bg-gradient-to-r from-violet-50 to-purple-50 p-8 rounded-2xl border-l-4 border-violet-500 mb-8">
                     <h3 className="text-2xl font-bold mb-6 text-violet-700 flex items-center">
@@ -1024,7 +1067,7 @@ const GrowthStorySection: React.FC = () => {
                     </h3>
 
                     {/* タイトル */}
-                    <div className="bg-white p-6 rounded-xl shadow-lg border border-violet-200 mb-6">
+              {/* <div className="bg-white p-6 rounded-xl shadow-lg border border-violet-200 mb-6">
                       <h4 className="text-xl font-bold text-violet-700 text-center leading-relaxed">
                         技術とビジネスを繋ぐ「架け橋」として、
                         <br />
@@ -1033,50 +1076,6 @@ const GrowthStorySection: React.FC = () => {
                     </div>
 
                     {/* 本文 */}
-                    <div className="bg-white/70 backdrop-blur-sm p-6 rounded-xl border border-violet-200 space-y-4">
-                      <p className="text-gray-700 text-base leading-relaxed">
-                        私の強みである
-                        <span className="font-bold text-violet-700 bg-violet-100 px-2 py-1 rounded mx-1">
-                          「①アイデアを即、形にする行動力」
-                        </span>
-                        <span className="font-bold text-purple-700 bg-purple-100 px-2 py-1 rounded mx-1">
-                          「②多様な関係者を巻き込む共創力」
-                        </span>
-                        <span className="font-bold text-indigo-700 bg-indigo-100 px-2 py-1 rounded mx-1">
-                          「③目標を完遂するプロジェクト推進力」
-                        </span>
-                        を掛け合わせ、Kozuchiのビジネス価値最大化をリードします。
-                      </p>
-
-                      <p className="text-gray-700 text-base leading-relaxed font-medium">
-                        しかし、私の役割は単なる「橋渡し」に留まりません。
-                      </p>
-
-                      <div className="bg-gradient-to-r from-violet-50 to-purple-50 p-4 rounded-lg border-l-4 border-violet-400">
-                        <p className="text-gray-700 text-base leading-relaxed">
-                          研究技術に顧客のニーズという火を灯し、価値あるMVPを最速で生み出す。
-                          <br />
-                          そして、プロダクトオーナーとして自らが先頭に立ち、PoCで終わらせることなく、情熱をもって商用化への道を切り拓く。
-                        </p>
-                      </div>
-
-                      <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-4 rounded-lg border border-amber-200 text-center">
-                        <p className="text-gray-800 text-base leading-relaxed">
-                          技術と人、ビジネスと顧客が出会うことで生まれる化学反応を最大化する
-                          <span className="font-bold text-amber-700 bg-amber-200 px-3 py-1 rounded-full mx-2 text-lg">
-                            「触媒」
-                          </span>
-                          となり、
-                          <span className="font-bold text-red-700">
-                            KPI10億円
-                          </span>
-                          という目標達成を必ず実現させてみせます。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
